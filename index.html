@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YZ - Game UI Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- English fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@300;400;500;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <!-- Hebrew fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Hebrew:wght@100;200;300;400;500;600;700&family=Playpen+Sans+Hebrew:wght@100..800&display=swap" rel="stylesheet">
+   <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Space Grotesk"','IBM Plex Sans Hebrew', 'sans-serif'],
+              mono: ['"JetBrains Mono"',"IBM Plex Sans Hebrew", 'monospace'],
+              marker: ["Playpen Sans Hebrew",'"Permanent Marker"', 'cursive'],
+            },
+            colors: {
+              slate: {
+                950: '#020617', // Darker background
+              },
+              // Vibrant Pop Colors (CMYK vibes)
+              'pop-yellow': '#FFE600',
+              'pop-pink': '#FF0099',
+              'pop-blue': '#00F0FF',
+              'pop-purple': '#8A2BE2',
+              'pop-orange': '#f97316',
+            },
+            animation: {
+              'float': 'float 6s ease-in-out infinite',
+              'wiggle': 'wiggle 1s ease-in-out infinite',
+              'glitch': 'glitch 2s infinite',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-10px)' },
+              },
+              wiggle: {
+                '0%, 100%': { transform: 'rotate(-3deg)' },
+                '50%': { transform: 'rotate(3deg)' },
+              },
+              glitch: {
+                '0%': { transform: 'translate(0)' },
+                '20%': { transform: 'translate(-2px, 2px)' },
+                '40%': { transform: 'translate(-2px, -2px)' },
+                '60%': { transform: 'translate(2px, 2px)' },
+                '80%': { transform: 'translate(2px, -2px)' },
+                '100%': { transform: 'translate(0)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0f172a;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #334155;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #475569;
+      }
+
+      /* Comic Halftone Pattern */
+      .bg-halftone {
+        background-image: radial-gradient(#334155 1px, transparent 1px);
+        background-size: 20px 20px;
+      }
+      .bg-halftone-light {
+        background-image: radial-gradient(rgba(0,0,0,0.1) 1px, transparent 1px);
+        background-size: 10px 10px;
+      }
+      
+      /* Comic Shadows */
+      .shadow-comic {
+        box-shadow: 4px 4px 0px 0px #000;
+      }
+      .shadow-comic-hover:hover {
+        transform: translate(-2px, -2px);
+        box-shadow: 6px 6px 0px 0px #000;
+      }
+      .shadow-comic-lg {
+        box-shadow: 8px 8px 0px 0px #000;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.10.1",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1"
+  }
+}
+</script>
+<!-- <link rel="stylesheet" href="/index.css"> -->
+</head>
+  <body class="bg-slate-950 overflow-x-hidden">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
