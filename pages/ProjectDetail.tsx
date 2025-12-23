@@ -51,6 +51,15 @@ const ProjectDetail: React.FC = () => {
         Legendary: 'bg-pop-yellow border-slate-900 text-slate-900',
     };
 
+    const fixImagePaths = (html: string) => {
+  const baseUrl = (import.meta as any).env.BASE_URL;
+  
+  // This looks for src="assets/ or src="/assets/ and adds the baseUrl
+  return html.replace(/src=["']\/?assets\//g, `src="${baseUrl}assets/`);
+};
+
+const htmlContent = getLocalized(project.contentHtml) as string;
+
     const hasGallery = Array.isArray(project.gallery) && project.gallery.length > 0;
     const galleryImages = useMemo(
         () => (project.gallery ?? []).filter((g) => g.type === 'image'),
@@ -149,7 +158,7 @@ const ProjectDetail: React.FC = () => {
                     <div>
                         <div className="relative aspect-video border-4 border-slate-900 shadow-comic-lg bg-slate-800 group overflow-hidden max-h-[50vh] m-auto mb-5">
                             <img
-                                src={project.coverImage}
+                                src={`${(import.meta as any).env.BASE_URL}${project.coverImage}`}
                                 alt={getLocalized(project.name)}
                                 className="w-full h-full object-cover"
                             />
@@ -231,7 +240,7 @@ const ProjectDetail: React.FC = () => {
 
                 <div
                     className="prose prose-invert prose-lg prose-p:font-medium prose-headings:font-black prose-headings:italic prose-a:text-pop-blue max-w-none text-slate-300 space-y-6"
-                    dangerouslySetInnerHTML={{ __html: getLocalized(project.contentHtml) as string }}
+                    dangerouslySetInnerHTML={{ __html: fixImagePaths(htmlContent)}}
                 />
             </div>
 
@@ -253,7 +262,7 @@ const ProjectDetail: React.FC = () => {
                                         className="block w-full text-left"
                                         aria-label="Open image"
                                     >
-                                        <img src={item.src} alt={item.alt || ''} className="w-full h-auto" />
+                                        <img src={`${(import.meta as any).env.BASE_URL}${item.src}`} alt={item.alt || ''} className="w-full h-auto" />
                                     </button>
                                 )}
 
@@ -355,7 +364,7 @@ const ProjectDetail: React.FC = () => {
 
         {/* Image */}
         <img
-          src={galleryImages[lightboxIndex!].src}
+          src={`${(import.meta as any).env.BASE_URL}${galleryImages[lightboxIndex!].src}`}
           alt={galleryImages[lightboxIndex!].alt || ''}
           className="max-h-[85vh] w-full object-contain"
           draggable={false}

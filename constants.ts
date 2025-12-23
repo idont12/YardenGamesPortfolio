@@ -58,7 +58,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
 export const STICKERS: Sticker[] = [
   {
     id: 'sticker_coffee',
-    src: '../public/assets/projects/Stickers/Smile.webp',
+    src: '/assets/projects/Stickers/Smile.webp',
     label: { en: 'Smile', he: 'חייכו' },
     description: { en: 'One small smile can change everything.', he: 'חיוך קטן אחד יכול לשנות הכל.' },
     x: '10%',
@@ -68,7 +68,7 @@ export const STICKERS: Sticker[] = [
   },
   {
     id: 'sticker_controller',
-    src: '../public/assets/projects/Stickers/Lumos.webp',
+    src: '/assets/projects/Stickers/Lumos.webp',
     label: { en: 'Lumos', he: 'לומוס' },
     description: { en: 'Arrives early and turns on the light in the office.', he: 'מגיע מוקדם ומדליק את האור במשרד.' },
     x: '85%',
@@ -78,7 +78,7 @@ export const STICKERS: Sticker[] = [
   },
   {
     id: 'sticker_bug',
-    src: '../public/assets/projects/Stickers/Nature.webp',
+    src: '/assets/projects/Stickers/Nature.webp',
     label: { en: 'Totoro', he: 'טוטרו' },
     description: { en: 'Nature is always good for the soul.', he: 'טבע תמיד עושה טוב לנשמה.' },
     x: '75%',
@@ -88,7 +88,7 @@ export const STICKERS: Sticker[] = [
   },
   {
     id: 'sticker_cat',
-    src: '../public/assets/projects/Stickers/Game.webp',
+    src: '/assets/projects/Stickers/Game.webp',
     label: { en: 'My top games', he: 'המשחקים אהובים עלי' },
     description: { en: "Portal 2 & Evan's Remains", he: "פורטל 2 + Evan's Remains" },
     x: '5%',
@@ -98,7 +98,7 @@ export const STICKERS: Sticker[] = [
   },
   {
     id: 'sticker_bug2',
-    src: '../public/assets/projects/Stickers/Duck.webp',
+    src: '/assets/projects/Stickers/Duck.webp',
     label: { en: 'Avocado Face', he: 'פני אבוקדו' },
     description: { en: 'It is always important to plan time for unexpected events.', he: 'חשוב תמיד לתכנון זמן לבלת"מים.' },
     x: '75%',
@@ -108,7 +108,7 @@ export const STICKERS: Sticker[] = [
   },
   // {
   //   id: 'Duck',
-  //   src: '../public/assets/projects/Stickers/Duck.webp',
+  //   src: '/assets/projects/Stickers/Duck.webp',
   //   label: { en: 'Co-Pilot', he: 'המשחקים אהובים עלי' },
   //   description: { en: "Portal 2 & Evan's Remains", he: "פורטל 2 + Evan's Remains" },
   //   x: '5%',
@@ -223,7 +223,7 @@ export const PROJECTS: Project[] = [
     xpGain: 1250,
     rarity: 'Epic',
     accentColor: '#06b6d4', // Cyan
-    coverImage: '../public/assets/projects/MaccabiahOnTime/Cover.webp',
+    coverImage: '/assets/projects/MaccabiahOnTime/Cover.webp',
     workSummary: {
       en: [
         'Redesigned the alert triage workflow.',
@@ -249,12 +249,12 @@ export const PROJECTS: Project[] = [
       }
     },
     gallery: [
-      { type: 'image', src: '../public/assets/projects/MaccabiahOnTime/Image2.webp', alt: 'Teacher class main screen' },
-      { type: 'image', src: '../public/assets/projects/MaccabiahOnTime/Image4.webp', alt: 'Teacher end game main screen' },
-      { type: 'image', src: '../public/assets/projects/MaccabiahOnTime/Image5.webp', alt: 'In game screenshot' },
-      { type: 'image', src: '../public/assets/projects/MaccabiahOnTime/Image6.webp', alt: 'In game mini game screenshot' },
-      { type: 'image', src: '../public/assets/projects/MaccabiahOnTime/Image7.webp', alt: 'In game screenshot' },
-      { type: 'image', src: '../public/assets/projects/MaccabiahOnTime/Image8.webp', alt: 'In game mini game screenshot' },
+      { type: 'image', src: '/assets/projects/MaccabiahOnTime/Image2.webp', alt: 'Teacher class main screen' },
+      { type: 'image', src: '/assets/projects/MaccabiahOnTime/Image4.webp', alt: 'Teacher end game main screen' },
+      { type: 'image', src: '/assets/projects/MaccabiahOnTime/Image5.webp', alt: 'In game screenshot' },
+      { type: 'image', src: '/assets/projects/MaccabiahOnTime/Image6.webp', alt: 'In game mini game screenshot' },
+      { type: 'image', src: '/assets/projects/MaccabiahOnTime/Image7.webp', alt: 'In game screenshot' },
+      { type: 'image', src: '/assets/projects/MaccabiahOnTime/Image8.webp', alt: 'In game mini game screenshot' },
     ],
     contentHtml: {
       en: `
@@ -276,7 +276,7 @@ export const PROJECTS: Project[] = [
 
 <div class="mt-6 rounded-2xl border border-slate-800 bg-slate-900/60 p-4 sm:p-5">
   <figure class="space-y-3">
-    <img src="../public/assets/projects/MaccabiahOnTime/Image3.webp" alt="Example of the score screen at the end of the game" class="w-full rounded-xl object-cover m-auto">
+    <img src="/assets/projects/MaccabiahOnTime/Image3.webp" alt="Example of the score screen at the end of the game" class="w-full rounded-xl object-cover m-auto">
     <figcaption class="text-sm text-slate-300">Example of the score screen at the end of the game</figcaption>
   </figure>
 </div>
@@ -312,7 +312,7 @@ export const PROJECTS: Project[] = [
 
 <div class="mt-6 rounded-2xl border border-slate-800 bg-slate-900/60 p-4 sm:p-5">
   <figure class="space-y-3">
-    <img src="../public/assets/projects/MaccabiahOnTime/Image3.webp" alt="דוגמה למסך ניקוד" class="w-full rounded-xl object-cover m-auto">
+    <img src="/assets/projects/MaccabiahOnTime/Image3.webp" alt="דוגמה למסך ניקוד" class="w-full rounded-xl object-cover m-auto">
     <figcaption class="text-sm text-slate-300">דוגמה למסך ניקוד בסוף המשחק</figcaption>
   </figure>
 </div>
@@ -341,7 +341,7 @@ export const PROJECTS: Project[] = [
     xpGain: 800,
     rarity: 'Rare',
     accentColor: '#d946ef', // Fuchsia
-    coverImage: '../public/assets/projects/screenBreakerXp/Cover.jpg',
+    coverImage: '/assets/projects/screenBreakerXp/Cover.jpg',
     workSummary: {
       en: ['Building a dynamic ‘Paint’ mechanic with optimized logic.', 'Creating as many cool and fun tools as I can.'],
       he: ['בניית מערכת "צייר" דינמית ועם קוד יעיל', 'יצירת כמה שיותר כלים מגניבים וכיפים ']
@@ -359,10 +359,10 @@ export const PROJECTS: Project[] = [
     },
     technologies: ['Godot', 'Affinity'],
     gallery: [
-      { type: 'image', src: '../public/assets/projects/screenBreakerXp/Gif1.gif', alt: 'Gameplay that show to to use the hummer tool' },
-      { type: 'image', src: '../public/assets/projects/screenBreakerXp/Gif2.gif', alt: 'Gameplay of chaos in the game' },
-      { type: 'image', src: '../public/assets/projects/screenBreakerXp/image1.webp', alt: 'Menu in game' },
-      { type: 'image', src: '../public/assets/projects/screenBreakerXp/image2.webp', alt: 'Gameplay that show to to use the dragon tool' }
+      { type: 'image', src: '/assets/projects/screenBreakerXp/Gif1.gif', alt: 'Gameplay that show to to use the hummer tool' },
+      { type: 'image', src: '/assets/projects/screenBreakerXp/Gif2.gif', alt: 'Gameplay of chaos in the game' },
+      { type: 'image', src: '/assets/projects/screenBreakerXp/image1.webp', alt: 'Menu in game' },
+      { type: 'image', src: '/assets/projects/screenBreakerXp/image2.webp', alt: 'Gameplay that show to to use the dragon tool' }
     ],
     contentHtml: {
       en: `
@@ -377,7 +377,7 @@ export const PROJECTS: Project[] = [
 
   <div class="mt-6 rounded-2xl border border-slate-800 bg-slate-900/60 p-4 sm:p-5">
     <figure class="space-y-3">
-      <img src="../public/assets/projects/screenBreakerXp/UI_Test.webp" alt="Different versions of the tool menu design" class="w-full rounded-xl object-cover max-w-[500px] m-auto">
+      <img src="/assets/projects/screenBreakerXp/UI_Test.webp" alt="Different versions of the tool menu design" class="w-full rounded-xl object-cover max-w-[500px] m-auto">
       <figcaption class="text-sm text-slate-300">
        Different versions of the tool menu design
       </figcaption>
@@ -409,7 +409,7 @@ export const PROJECTS: Project[] = [
 
   <div class="mt-6 rounded-2xl border border-slate-800 bg-slate-900/60 p-4 sm:p-5">
     <figure class="space-y-3">
-      <img src="../public/assets/projects/screenBreakerXp/UI_Test.webp" alt="ניסיונות עיצוב של תפריט כלים" class="w-full rounded-xl object-cover max-w-[500px] m-auto">
+      <img src="/assets/projects/screenBreakerXp/UI_Test.webp" alt="ניסיונות עיצוב של תפריט כלים" class="w-full rounded-xl object-cover max-w-[500px] m-auto">
       <figcaption class="text-sm text-slate-300">
         גרסאות שונות לעיצוב תפריט הכלים
       </figcaption>
@@ -461,7 +461,7 @@ export const PROJECTS: Project[] = [
     xpGain: 5000,
     rarity: 'Legendary',
     accentColor: '#eab308', // Yellow
-    coverImage: '../public/assets/projects/Wizdi/Image1.webp',
+    coverImage: '/assets/projects/Wizdi/Image1.webp',
     workSummary: {
       en: ['Game layout planning.', 'Prototype creation.', 'Design and animation of elements', 'Implementation of animations and assets in the game'],
       he: ['תכנון פריסת משחק.', 'יצירת פרוטוטייפ.', "עיצוב והנפשה של אלמנטים.", "הטמעת אנימציות ואסטים במשחק"]
@@ -479,9 +479,9 @@ export const PROJECTS: Project[] = [
     },
     technologies: ['Construct 3', 'Illustrator'],
     gallery: [
-     { type: 'image', src: '../public/assets/projects/Wizdi/Image2.webp', alt: 'Image from game' },
-     { type: 'image', src: '../public/assets/projects/Wizdi/Image3.webp', alt: 'Image from game' },
-     { type: 'image', src: '../public/assets/projects/Wizdi/Image4.webp', alt: 'Image from game' },
+     { type: 'image', src: '/assets/projects/Wizdi/Image2.webp', alt: 'Image from game' },
+     { type: 'image', src: '/assets/projects/Wizdi/Image3.webp', alt: 'Image from game' },
+     { type: 'image', src: '/assets/projects/Wizdi/Image4.webp', alt: 'Image from game' },
     ],
     contentHtml: {
       en: `<p class="leading-relaxed text-slate-100">
@@ -494,7 +494,7 @@ The game works as follows: a bar of wooden blocks appears on the screen, some nu
 
 <div class="mt-6 rounded-2xl border border-slate-800 bg-slate-900/60 p-4 sm:p-5">
   <figure class="space-y-3">
-    <img src="../public/assets/projects/Wizdi/gif1.gif" alt="Educational game for children" class="w-full rounded-xl object-cover max-w-[500px] m-auto">
+    <img src="/assets/projects/Wizdi/gif1.gif" alt="Educational game for children" class="w-full rounded-xl object-cover max-w-[500px] m-auto">
     <figcaption class="text-sm text-slate-300">
       Positive feedback in the game
     </figcaption>
@@ -519,7 +519,7 @@ The main challenge in development was turning a very simple game idea into an en
 
 <div class="mt-6 rounded-2xl border border-slate-800 bg-slate-900/60 p-4 sm:p-5">
   <figure class="space-y-3">
-    <img src="../public/assets/projects/Wizdi/gif1.gif" alt="משחק לימודי לילדים" class="w-full rounded-xl object-cover max-w-[500px] m-auto">
+    <img src="/assets/projects/Wizdi/gif1.gif" alt="משחק לימודי לילדים" class="w-full rounded-xl object-cover max-w-[500px] m-auto">
     <figcaption class="text-sm text-slate-300">
      משוב חיובי במשחק
     </figcaption>
@@ -553,7 +553,7 @@ The main challenge in development was turning a very simple game idea into an en
     xpGain: 2000,
     rarity: 'Epic',
     accentColor: '#10b981', // Emerald
-    coverImage: '../public/assets/projects/Hex-Shade/Cover.jpg',
+    coverImage: '/assets/projects/Hex-Shade/Cover.jpg',
     workSummary: {
       en: [
         'Designed intuitive, text-free platformer levels around single mechanics.',
@@ -577,10 +577,10 @@ The main challenge in development was turning a very simple game idea into an en
     },
     technologies: ['Unity', 'Illustrator'],
     gallery: [
-      { type: 'image', src: '../public/assets/projects/Hex-Shade/Image1.webp', alt: 'Welcome screen' },
-      { type: 'image', src: '../public/assets/projects/Hex-Shade/Image2.webp', alt: 'Level 8 - water level', },
-      { type: 'image', src: '../public/assets/projects/Hex-Shade/Image3.webp', alt: 'Level 11 - Gameplay screen' },
-      { type: 'image', src: '../public/assets/projects/Hex-Shade/Image4.webp', alt: 'Level 12 - Gameplay screen', }
+      { type: 'image', src: '/assets/projects/Hex-Shade/Image1.webp', alt: 'Welcome screen' },
+      { type: 'image', src: '/assets/projects/Hex-Shade/Image2.webp', alt: 'Level 8 - water level', },
+      { type: 'image', src: '/assets/projects/Hex-Shade/Image3.webp', alt: 'Level 11 - Gameplay screen' },
+      { type: 'image', src: '/assets/projects/Hex-Shade/Image4.webp', alt: 'Level 12 - Gameplay screen', }
     ],
     contentHtml: {
       en: `<div class="space-y-4">
@@ -597,7 +597,7 @@ The main challenge in development was turning a very simple game idea into an en
   <div class="mt-6 rounded-2xl border border-slate-800 bg-slate-900/60 p-4 sm:p-5">
     <figure class="space-y-3">
       <img
-        src="../public/assets/projects/Hex-Shade/Level layout.webp"
+        src="/assets/projects/Hex-Shade/Level layout.webp"
         alt="An example of how I built a tutorial without text."
         class="w-full rounded-xl object-cover max-w-[500px] m-auto"
       >
@@ -633,7 +633,7 @@ The main challenge in development was turning a very simple game idea into an en
   <div class="mt-6 rounded-2xl border border-slate-800 bg-slate-900/60 p-4 sm:p-5">
     <figure class="space-y-3">
       <img
-        src="../public/assets/projects/Hex-Shade/Level layout.webp"
+        src="/assets/projects/Hex-Shade/Level layout.webp"
         alt="דוגמה לאיך שבניתי הדרכה בלי טקסט."
         class="w-full rounded-xl object-cover max-w-[500px] m-auto"
       >

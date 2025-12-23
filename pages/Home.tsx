@@ -147,7 +147,7 @@ const Home: React.FC = () => {
                         {/* Background Image & Overlay */}
                         <div 
                             className="absolute inset-0 bg-cover bg-center transition-transform duration-700 scale-100 group-hover:scale-110"
-                            style={{ backgroundImage: `url(${project.coverImage})` }}
+                            style={{ backgroundImage: `url(${(import.meta as any).env.BASE_URL}${project.coverImage})` }}
                         />
                         <div className={`absolute inset-0 bg-halftone mix-blend-multiply transition-opacity duration-300 ${isActive ? 'opacity-20' : 'opacity-80'}`} />
                         <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/50 to-transparent" />

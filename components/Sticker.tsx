@@ -83,7 +83,7 @@ const Sticker: React.FC<StickerProps> = ({ data }) => {
              
              <div className="relative overflow-hidden">
                  <img 
-                    src={data.src} 
+                    src={`${(import.meta as any).env.BASE_URL}${data.src}`} 
                     alt="Sticker" 
                     className="w-20 h-20 pointer-events-none object-contain" 
                  />
