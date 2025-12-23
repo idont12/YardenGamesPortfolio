@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # YZ Game UI Portfolio
 
 A gamified, tech-inspired portfolio website built with React, Vite, and Tailwind CSS. Features "Into the Spider-Verse" comic aesthetics, bilingual support (EN/HE), a sticker collection system, and game-HUD mechanics.
@@ -81,3 +82,6 @@ To replace the HTML/CSS loader with a real Rive animation:
 1.  Install the library: `npm install @rive-app/react-canvas`
 2.  Open `components/IntroLoader.tsx`.
 3.  Follow the comments inside the file to implement the `useRive` hook.
+=======
+# YardenGamesPortfolio
+>>>>>>> a02524334a7ec2424482160cbf4c26aabe4d9ab9
