@@ -1,26 +1,22 @@
 import ReactGA from "react-ga4";
 
+const GA_ID = import.meta.env.VITE_GA_ID;
+
 export const initGA = () => {
-  if (import.meta.env.MODE === "production") {
-    ReactGA.initialize(import.meta.env.VITE_GA_ID);
+  if (GA_ID) {
+    ReactGA.initialize(GA_ID);
+    console.log("GA Initialized with ID:", GA_ID);
   }
 };
 
 export const trackPage = (path) => {
-  if (import.meta.env.MODE === "production") {
-    ReactGA.send({
-      hitType: "pageview",
-      page: path,
-    });
-  }
+  ReactGA.send({ hitType: "pageview", page: path });
 };
 
-export const trackEvent = (action, category, label) => {
-  if (import.meta.env.MODE === "production") {
-    ReactGA.event({
-      action,
-      category,
-      label,
-    });
-  }
+export const trackEvent = (category, action, label) => {
+  ReactGA.event({
+    category: category,
+    action: action,
+    label: label,
+  });
 };

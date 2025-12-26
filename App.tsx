@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import PageTracker from "./components/PageTracker";
 import Navbar from './components/Navbar';
@@ -14,9 +14,20 @@ import { StickerProvider } from './context/StickerContext';
 const AppContent: React.FC = () => {
   const [introFinished, setIntroFinished] = useState(false);
 
+  useEffect(() => {
+    // Initialize analytics (no-op in non-production inside util)
+    try {
+      // import here to keep init logic colocated and avoid SSR/build issues
+      // eslint-disable-next-line @typescript-eslint/no-var-requires
+      const { initGA } = require('./utils/analytics');
+      if (initGA) initGA();
+    } catch (e) {
+      // ignore if analytics cannot be initialized
+    }
+  }, []);
   return (
     <div className="min-h-screen bg-slate-950 font-sans selection:bg-pop-pink selection:text-white">
-      
+      <PageTracker />
       {!introFinished && (
         <IntroLoader onFinished={() => setIntroFinished(true)} />
       )}
@@ -24,7 +35,6 @@ const AppContent: React.FC = () => {
       {/* Main App Visibility Control */}
       <div className={`transition-opacity duration-1000 ${introFinished ? 'opacity-100' : 'opacity-0 h-0 overflow-hidden'}`}>
         <Navbar />
-        <PageTracker />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/project/:slug" element={<ProjectDetail />} />

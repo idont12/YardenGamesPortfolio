@@ -6,7 +6,8 @@ export default function PageTracker() {
   const location = useLocation();
 
   useEffect(() => {
-    trackPage(location.pathname);
+    const fullPath = location.pathname + location.hash;
+    trackPage(fullPath);
   }, [location]);
 
   return null;
