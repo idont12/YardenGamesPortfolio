@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import { Sticker as StickerType } from '../types';
 import { useStickers } from '../context/StickerContext';
 import { useLanguage } from '../context/LanguageContext';
+import { trackEvent } from '../utils/analytics';
 
 interface StickerProps {
   data: StickerType;
@@ -18,7 +19,7 @@ const Sticker: React.FC<StickerProps> = ({ data }) => {
   const handleClick = (e: React.MouseEvent) => {
     e.stopPropagation();
     if (collected || isFlying) return;
-    
+    trackEvent('click', 'sticker', data.id);
     // Find the Backpack icon in the Navbar
     const backpackElement = document.querySelector('[title="Sticker Collection"]');
     const stickerElement = stickerRef.current;

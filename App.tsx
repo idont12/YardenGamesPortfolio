@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import PageTracker from "./components/PageTracker";
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import ProjectDetail from './pages/ProjectDetail';
@@ -23,7 +24,7 @@ const AppContent: React.FC = () => {
       {/* Main App Visibility Control */}
       <div className={`transition-opacity duration-1000 ${introFinished ? 'opacity-100' : 'opacity-0 h-0 overflow-hidden'}`}>
         <Navbar />
-        
+        <PageTracker />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/project/:slug" element={<ProjectDetail />} />

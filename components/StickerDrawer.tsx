@@ -69,7 +69,7 @@ const StickerDrawer: React.FC = () => {
                     {isUnlocked ? (
                       <div className="relative drop-shadow-2xl">
                         <div className="absolute inset-0 bg-white rounded-full opacity-0 blur-md group-hover:opacity-60 transition-opacity" />
-                        <img src={sticker.src} alt="sticker" className="w-30 h-30 relative z-10" />
+                        <img src={`${(import.meta as any).env.BASE_URL}${sticker.src}`} alt="sticker" className="w-30 h-30 relative z-10" />
                       </div>
                     ) : (
                       <div className="text-slate-300 w-12 h-12">

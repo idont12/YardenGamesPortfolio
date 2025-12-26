@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { SOCIAL_LINKS, ICONS } from '../constants';
+import { trackEvent } from '../utils/analytics';
 
 const FooterRewardCard: React.FC = () => {
   const { t } = useLanguage();
@@ -10,7 +11,7 @@ const FooterRewardCard: React.FC = () => {
 
   // Helper to map ID to Icon
   const getIcon = (id: string) => {
-    switch(id) {
+    switch (id) {
       case 'email': return ICONS.EMAIL;
       case 'linkedin': return ICONS.LINKEDIN;
       case 'instagram': return ICONS.INSTAGRAM;
@@ -21,10 +22,10 @@ const FooterRewardCard: React.FC = () => {
   return (
     <footer className="relative py-24 px-6 overflow-hidden bg-halftone">
       <div className="relative max-w-4xl mx-auto bg-slate-900 border-4 border-slate-900 rounded-none p-8 md:p-12 shadow-comic-lg transform rotate-1">
-        
+
         {/* Comic Background accent */}
         <div className="absolute inset-0 bg-pop-purple mix-blend-overlay opacity-20 pointer-events-none" />
-        
+
         {/* Rarity Tag */}
         <div className="inline-block px-4 py-1 bg-pop-pink text-white text-sm font-marker uppercase tracking-wider mb-6 border-2 border-slate-900 shadow-comic -rotate-2">
           {t('reward.tag')}
@@ -46,11 +47,17 @@ const FooterRewardCard: React.FC = () => {
               target="_blank"
               rel="noreferrer"
               className="relative flex flex-col items-center justify-center p-6 bg-white border-4 border-slate-900 hover:bg-pop-yellow hover:-translate-y-2 hover:shadow-[8px_8px_0px_#000] transition-all duration-200 group/chip text-slate-900"
+              onClick={() =>
+                trackEvent(
+                  'click',
+                  'footer_link',
+                  link.id || link.url
+                )}
             >
-                {/* Icon */}
-                <div className="mb-3 w-10 h-10 text-slate-900 group-hover/chip:scale-110 transition-transform">
-                    {getIcon(link.id)}
-                </div>
+              {/* Icon */}
+              <div className="mb-3 w-10 h-10 text-slate-900 group-hover/chip:scale-110 transition-transform">
+                {getIcon(link.id)}
+              </div>
 
               <div className="text-xl font-black font-sans uppercase">
                 {getSocialLabel(link.id, 'label')}

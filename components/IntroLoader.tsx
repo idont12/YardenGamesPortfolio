@@ -60,7 +60,7 @@ const AlchemistLoader: React.FC<IntroLoaderProps> = ({ onFinished }) => {
         </svg>
 
         {/* CENTER SHAPE: SPIDER-VERSE GLITCH EFFECT */}
-        <div className="relative w-64 h-64">
+        <div className="relative w-64 h-64 bottom-[1.5%] left-[1.5%]">
             {/* Layers for Chromatic Aberration */}
             {[
                 { color: '#00ffff', offset: '-2px, -1px' }, // Cyan
