@@ -10,19 +10,16 @@ import IntroLoader from './components/IntroLoader';
 import StickerDrawer from './components/StickerDrawer';
 import { LanguageProvider } from './context/LanguageContext';
 import { StickerProvider } from './context/StickerContext';
-
+import { initGA } from './utils/analytics'; 
 const AppContent: React.FC = () => {
   const [introFinished, setIntroFinished] = useState(false);
 
-  useEffect(() => {
-    // Initialize analytics (no-op in non-production inside util)
+useEffect(() => {
     try {
-      // import here to keep init logic colocated and avoid SSR/build issues
       // eslint-disable-next-line @typescript-eslint/no-var-requires
-      const { initGA } = require('./utils/analytics');
       if (initGA) initGA();
     } catch (e) {
-      // ignore if analytics cannot be initialized
+      console.error("GA Initialization Error:", e); // This will tell you exactly what's wrong
     }
   }, []);
   return (
