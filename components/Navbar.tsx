@@ -15,7 +15,7 @@ const Navbar: React.FC = () => {
         </div>
       </Link>
       
-      <div className="flex items-center space-x-4">
+      <div className="flex items-center gap-3">
         {/* Sticker Bag Button */}
         <button 
             onClick={() => setDrawerOpen(true)}
