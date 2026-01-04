@@ -40,7 +40,7 @@ const StickerDrawer: React.FC = () => {
 
           <div className="flex justify-between items-start flex-wrap gap-2 mb-8">
             <p className="text-center font-mono text-slate-500 border-b-2 border-slate-900 border-dashed inline-block px-4 pb-1">
-              {t('stickers.count')} {collectedIds.length} / {STICKERS.length}
+              {t('stickers.count')} <span class="tracking-[0.4em]">{collectedIds.length}/{STICKERS.length}</span>
             </p>
 
             {/* Clear Button - Shows up when there are stickers collected */}
