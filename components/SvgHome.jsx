@@ -502,7 +502,7 @@ export default function SvgHome() {
 
   return (
     <div
-      style={{margin: "0 auto", cursor: "pointer" }}
+      style={{margin: "0 auto"}}
       class="max-w-[450px] w-[100%]"
     >
       <MainSvg ref={svgRef} onClick={handleClick} />
