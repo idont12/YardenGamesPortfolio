@@ -478,7 +478,6 @@ export default function SvgHome() {
       // clamp to avoid negative / >1 values
       progressX = Math.max(0, Math.min(1, progressX));
       progressY = Math.max(0, Math.min(1, progressY));
-      console.log("x: ", progressX, " y: ", progressY);
 
       mouseLr.current.progress(progressX);
       mouseTb.current.progress(progressY);
