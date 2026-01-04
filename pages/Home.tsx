@@ -169,7 +169,7 @@ const Home: React.FC = () => {
             {/* --- ABOUT SECTION --- */}
             <section className="px-6 md:px-12 max-w-5xl mx-auto mb-32 relative">
                 <div className="bg-white text-slate-900 p-8 md:p-12 border-4 border-slate-900 shadow-comic-lg transform -rotate-1">
-                    <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-pop-pink text-white px-6 py-2 text-2xl font-marker border-4 border-slate-900 transform rotate-1 shadow-comic">
+                    <div className="absolute -top-6 left-1/2 w-max -translate-x-1/2 bg-pop-pink text-white px-6 py-2 text-2xl font-marker border-4 border-slate-900 transform rotate-1 shadow-comic">
                         {t('about.title')}
                     </div>
 
