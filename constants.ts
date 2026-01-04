@@ -133,20 +133,9 @@ export const TRANSLATIONS: TranslationMap = {
   'intro.entering': { en: 'READY_TO_PLAY', he: 'מוכן_למשחק' },
 
   // Hero
-  'hero.role': { en: 'Game Developer & Designer', he: 'מפתח ומעצב משחקים' },
-  'hero.headline': { en: "It's time to make same", he: 'הגיע הזמן להכין כמה' },
-  'hero.headline_highlight': { en: 'games.', he: 'משחקים.' },
-  'hero.desc': {
-    en: 'I develop creative, experiential, and unique games.',
-    he: 'אני מפתח משחקים יצירתיים, חוויתים ושונים.'
-  },
-  'hero.card.name1': { en: 'Yarden', he: 'ירדן' },
-  'hero.card.name2': { en: 'Zilberman', he: 'זילברמן' },
-  'hero.card.level': { en: 'LVL 07', he: 'שלב 07' },
-  'hero.card.progress': { en: 'XP Progress', he: 'מד התקדמות' },
-  'hero.card.games': { en: 'Games', he: 'משחקים' },
-  'hero.card.clients': { en: 'Clients', he: 'לקוחות' },
-  'hero.card.funny': { en: 'Cocoa', he: 'שוקו' },
+  'hero.name': { en: 'Yarden.', he: 'ירדן.' },
+  'hero.intro': { en: "Hey, I'm", he: 'הי, אני' },
+  'hero.end': { en: 'A game developer and designer.', he: 'מפתח ומעצב משחקים.' },
 
   // Hero Stats
   'hero.stats.projects': { en: 'Projects', he: 'פרויקטים' },
@@ -164,7 +153,7 @@ export const TRANSLATIONS: TranslationMap = {
   'about.title': { en: 'About Me', he: 'קצת עליי' },
   'about.p1': {
     en: "Hi, I’m Yarden, a game developer and designer.<br>I believe a good game teaches the player how to play, so I focus on creating a clear experience from the very first moment. I do this through thoughtful level design, clear feedback, animations, and making complex systems easy to understand.<br>Alongside that, I care about working efficiently and building polished, accessible games for different players and play styles.",
-    he: 'קוראים לי ירדן, אני מפתח ומעצב משחקים.<br>אני מאמין שמשחק טוב מלמד את השחקן איך לשחק בו, ושם דגש על יצירת חווית משחק ברורה מהרגע הראשון. הגשה שלי מתבטאת בתכנון שלבים, פידבקים, אנימציות והנגשה של מערכות מורכבות.<br>לצד זאת, חשוב לי לעבוד ביעילות ולייצר משחקים מלוטשים ונגישים למגוון משתמשים וצורות משחק.'
+    he: 'שמי ירדן, אני מפתח ומעצב משחקים.<br>אני מאמין שמשחק טוב מלמד את השחקן איך לשחק בו, ושם דגש על יצירת חווית משחק מהנה וברורה מהרגע הראשון. הגישה שלי מתבטאת בתכנון שלבים, פידבקים, אנימציות והנגשה של מערכות מורכבות.<br>לצד זאת, חשוב לי לעבוד ביעילות ולייצר משחקים מהנים ונגישים למגוון משתמשים וצורות משחק.'
   },
 
   // Project Detail
@@ -226,19 +215,19 @@ export const PROJECTS: Project[] = [
     coverImage: '/assets/projects/MaccabiahOnTime/Cover.webp',
     workSummary: {
       en: [
-        'Redesigned the alert triage workflow.',
-        'Created a dark-mode first design system.',
-        'Prototyped high-fidelity motion interactions.'
+        'Designing the game and the learning experience in accordance with existing research on the subject.',
+        'Creating a game and a teacher interface.',
+        'Testing the product with the target audience and making corrections.'
       ],
       he: [
-        'עיצוב מחדש של תהליך מיון ההתראות.',
-        'יצירת מערכת עיצוב מותאמת למצב כהה.',
-        'אבטיפוס לאינטראקציות תנועה ברמה גבוהה.'
+        'תכנון המשחק והחוויה הלימודית בהתאם למחקר שקיים בנושא.',
+        'יצירת משחק וממשק מורה.',
+        'בדיקה של התוצר עם קהל היעד וביצוע תיקונים.'
       ]
     },
     whatIDid: {
       en: ['Building the game in Unity', 'Game and character design', 'Animation for the game and videos', 'Backend development'],
-      he: ['בניית המשחק ב-Unity', 'עיצוב משחק ודמויות', 'אנימציה למשחק וסרטונים', 'פיתוח בשרת']
+      he: ['בניית המשחק ב-Unity', 'עיצוב משחק ודמויות', 'אנימציה למשחק וסרטונים', 'פיתוח בצד שרת']
     },
     technologies: ['Unity', 'Animate', 'Illustrator', 'Razor'],
     projectLink: {
@@ -308,7 +297,7 @@ export const PROJECTS: Project[] = [
 
 <p class="leading-relaxed text-slate-100">האתגר המרכזי בפרויקט היה להפוך נושא שנתפס כמשעמם בקרב תלמידים לחוויה משחקית, שמתאימה למגוון רחב של כיתות ויכולות שונות של תלמידים. התוצר הסופי שלנו הוא משחק שמחולק לשני שיעורים.</p>
 
-<p class="leading-relaxed text-slate-100">בכל שיעור המורה מתחיל להציג לכיתה סרטון אנימציה קצר שמספר את הסיפור של המשחק. לאחר מכן המורה מחלק את התלמידים לקבוצות. כל קבוצה משחקת דרך המחשב או טאבלט. לאורך המשחק התלמידים ידברו עם דמויות היסטוריות, יפתרו חידות, יאספו מדליות וישחקו במשחקונים תוך כדי צבירת ניקוד. בשיעור הסתיים במשחק כיתתי שיבחון הידע שהתלמידים למדו במשחק הקבוצתי ולבסוף הם יוכלו לראות את דירוגי הקבוצות. מנגנון הדירוג מתגמל בנפרד הצלחה בחידות והצלחה במחקר של השלבים על מנת לתת תחשות הצלחה גם למי שלא הכי טוב בחידות.</p>
+<p class="leading-relaxed text-slate-100">בכל שיעור המורה מתחיל להציג לכיתה סרטון אנימציה קצר שמספר את הסיפור של המשחק. לאחר מכן המורה מחלק את התלמידים לקבוצות. כל קבוצה משחקת דרך המחשב או טאבלט. לאורך המשחק התלמידים ידברו עם דמויות היסטוריות, יפתרו חידות, יאספו מדליות וישחקו במשחקונים תוך כדי צבירת ניקוד. השיעור מסתיים במשחק כיתתי שיבחן את הידע של התלמידים במשחק הקבוצתי ולבסוף הם יוכלו לראות את דירוגי הקבוצות. מנגנון הדירוג מתגמל בנפרד הצלחה בחידות והצלחה בחקירת השלבים על מנת לתת תחושת הצלחה גם למי שלא הכי טוב בחידות.</p>
 
 <div class="mt-6 rounded-2xl border border-slate-800 bg-slate-900/60 p-4 sm:p-5">
   <figure class="space-y-3">
@@ -317,7 +306,7 @@ export const PROJECTS: Project[] = [
   </figure>
 </div>
 
-<p class="leading-relaxed text-slate-100">שלב הבדיקות וה-QA היה מאוד קריטי עבורנו. משום כך כדי לבדוק את המשחק עשינו מספר דברים: נתנו מבחני שימושיות למורים על ממשק המורה (נתנו רשימת משימות למורים שצריך לבצע עם המערכת וראינו איך הם מתמודדים איתה). בנוסף העברנו שיעור לדוגמה עבור תלמידים ראינו עם מה הם תקשים ומה פחות ודיברנו איתם כדי לשמוע את החוויה שלהם. על בסיס המשובים שקיבלנו ביצענו שינויים שונים מהוספת עוד מדליות שצריך לאסוף (כי ילדים ממש נהנו מזה) ועד שינוי והוספת טקסטים של NPC או הוראות (כדי לוודא שמהלך המשחק יהיה ברור ככל הניתן).</p>
+<p class="leading-relaxed text-slate-100">שלב הבדיקות וה-QA היה מאוד קריטי עבורנו. כדי לבדוק את המשחק עשינו מספר דברים: נתנו מבחני שימושיות למורים על ממשק המורה (נתנו רשימת משימות למורים שצריך לבצע עם המערכת וראינו איך הם מתמודדים איתה). בנוסף העברנו שיעור לדוגמה עבור תלמידים ראינו במה הם מתקשים ושוחחנו איתם כדי לשמוע על החוויה שלהם. על בסיס המשובים שקיבלנו, ביצענו שינויים לדוגמה הוספת מדליות לאיסוף (כי ילדים ממש נהנו מזה) וכן שינוי והוספת טקסטים של NPC או הוראות (כדי לוודא שמהלך המשחק יהיה ברור ככל הניתן).</p>
 
 <p class="leading-relaxed text-slate-100">לאורך הפרויקט הייתי אחראי על כתיבת פונקציונליות השרת, בניית המשחק בפועל, עיצוב המשחק ויצירת קטעי האנימציה. התוצר הסופי התקבל בצורה חיובית מאוד בקרב מורים, תלמידים ואנשי מקצוע, ואף זכה להכרה כפרויקט גמר מצטיין.</p>
 
@@ -331,20 +320,20 @@ export const PROJECTS: Project[] = [
     shortTagline: { en: 'Screen breaking simulation', he: 'סימולציית שבירת מסך' },
     shortDescription: {
       en: 'A playful simulation where you get to trash a virtual desktop with all kinds of tools.',
-      he: 'סימולציה כיפית  בא אתם יכולים להשמיד את המסך שלכם בדרכים מוזרות.'
+      he: 'סימולציה כיפית בה אתם יכולים להשמיד את המסך שלכם בדרכים מוזרות.'
     },
     tag: { en: 'Remake', he: 'שחזור משחק' },
     purpose: { en: 'Personal Project', he: 'פרויקט אישי' },
     timeSpent: { en: '2 weeks', he: 'שבועיים' },
-    role: { en: 'UI Artist', he: 'אמן UI' },
+    role: { en: 'Everything', he: 'הכל' },
     difficulty: 3,
     xpGain: 800,
     rarity: 'Rare',
     accentColor: '#d946ef', // Fuchsia
     coverImage: '/assets/projects/screenBreakerXp/Cover.jpg',
     workSummary: {
-      en: ['Building a dynamic ‘Paint’ mechanic with optimized logic.', 'Creating as many cool and fun tools as I can.'],
-      he: ['בניית מערכת "צייר" דינמית ועם קוד יעיל', 'יצירת כמה שיותר כלים מגניבים וכיפים ']
+      en: ['Building a dynamic ‘Paint’ mechanic.', 'Creating fun tools.'],
+      he: ['בניית מערכת "צייר" דינמית', 'יצירת כלים מגניבים וכיפים ']
     },
     whatIDid: {
       en: ['Art', 'Programming'],
@@ -400,7 +389,7 @@ export const PROJECTS: Project[] = [
 `,
       he: `
   <p class="leading-relaxed text-slate-100">
-    Screen Breaker XP הוא משחק סנדבוקס עם רעיון אחד פשוט: להרוס את המסך בדרך הכי יצירתית שיש. המשחק רץ על PC, בדפדפן ובמובייל. המטרה של המשחק היא לייצר סביבה וכלים שמאפשרים להתפרע עם היצירתיות שלנו ולכן לא ניתן "לנצח" או "להפסיד".
+    Screen Breaker XP הוא משחק סנדבוקס עם רעיון אחד פשוט: להרוס את המסך בדרך הכי יצירתית שיש. המשחק רץ על מחשב, בדפדפן ובמובייל. המטרה של המשחק היא לייצר סביבה וכלים שמאפשרים להתפרע עם היצירתיות שלנו ולכן לא ניתן "לנצח" או "להפסיד".
   </p>
 
   <p class="leading-relaxed text-slate-100">
@@ -425,7 +414,7 @@ export const PROJECTS: Project[] = [
   </p>
 
   <p class="leading-relaxed text-slate-100">
-    כדי שהרימייק ירגיש עמוק יותר מהמקור, הוספתי חוק פשוט: חלק מהכלים עושים נזק, וחלק מסתירים את הנזק. וכך צבע או עשן אפשר למחוק, אבל סדקים וחורים נשארים. ההחלטה הזו הפכה את החוויה לעקבית ו“הגיונית”, גם כשהיא נראית כאוטית. זה גם הוביל לאתגר טכני מעניין. ציור על מסך זה דבר שדורש לא מעט משאבים במיוחד במקומות בהם היה צריך לעשות את זה על שתי השכבות במקביל. אז כדי שהמשחק לא יתקע על מחשבים איטיים או על מובייל ביצעתי התמאות שונות וקוד כמה טריקים ויזואליים ששיפרו את הביצועים בצורה משמעותית.
+    כדי שהרימייק ירגיש עמוק יותר מהמקור, הוספתי חוק פשוט: חלק מהכלים עושים נזק, וחלק מסתירים את הנזק. וכך צבע או עשן אפשר למחוק, אבל סדקים וחורים נשארים. ההחלטה הזו הפכה את החוויה לעקבית ו“הגיונית”, גם כשהיא נראית כאוטית. זה גם הוביל לאתגר טכני מעניין. ציור על מסך זה דבר שדורש לא מעט משאבים במיוחד במקומות בהם היה צריך לעשות את זה על שתי השכבות במקביל. אז כדי שהמשחק לא יתקע על מחשבים איטיים או על מובייל ביצעתי התמאות שונות ועוד כמה טריקים ויזואליים ששיפרו את הביצועים בצורה משמעותית.
   </p>
 
   <p class="leading-relaxed text-slate-100">
@@ -448,7 +437,7 @@ export const PROJECTS: Project[] = [
 
     shortDescription: {
       en: 'An educational platform of 40+ first-grade math mini-games designed for clear, playful practice alongside a textbook.',
-      he: 'פלטפורמה חינוכית של 40+ מיני־משחקים לכיתה א׳, לתרגול מתמטי ברור וחווייתי לצד ספר הלימוד.'
+      he: 'פלטפורמה חינוכית של 40+ מיני־משחקים לכיתה א׳, לתרגול חווייתי ומהנה.'
     },
 
     tag: { en: 'EdTech Game Suite', he: 'חבילת משחקי EdTech' },
@@ -494,7 +483,7 @@ The game works as follows: a bar of wooden blocks appears on the screen, some nu
 
 <div class="mt-6 rounded-2xl border border-slate-800 bg-slate-900/60 p-4 sm:p-5">
   <figure class="space-y-3">
-    <img src="/assets/projects/Wizdi/gif1.gif" alt="Educational game for children" class="w-full rounded-xl object-cover max-w-[500px] m-auto">
+    <img src="/assets/projects/Wizdi/Gif1.gif" alt="Educational game for children" class="w-full rounded-xl object-cover max-w-[500px] m-auto">
     <figcaption class="text-sm text-slate-300">
       Positive feedback in the game
     </figcaption>
@@ -510,7 +499,7 @@ The main challenge in development was turning a very simple game idea into an en
 </p>
 `,
       he: `<p class="leading-relaxed text-slate-100">
-מועדון המספרים הוא פרויקט שמטרתו לייצר מעטפת משחקית שמלווה ספרי לימוד במתמטיקה לכיתה א’. לאורך הפרויקט עבדתי על 40+ מיני משחקים שכל אחד יועד לעזור בתחומים מתמטייםשונים וכלל סיפור מסגרת, מנגנון וקונספט ייחודי. הפלטפורמה נועדה לאפשר לילדים לתרגל מיומנויות מתמטיות בסיסיות בצורה חווייתית. אחד המשחקים שפיתחתי במסגרת האוסף הוא שפן סלע מסדר מספרים, שמתרכז בהבנה של סדר מספרים בטווח שבין 20 ל־100.
+מועדון המספרים הוא פרויקט שמטרתו לייצר מעטפת משחקית שמלווה ספרי לימוד במתמטיקה לכיתה א’. לאורך הפרויקט עבדתי על 40+ מיני משחקים כשכל אחד יועד לעזור בתחומים מתמטיים שונים וכלל סיפור מסגרת, מנגנון וקונספט ייחודי. הפלטפורמה נועדה לאפשר לילדים לתרגל מיומנויות מתמטיות בסיסיות בצורה חווייתית. אחד המשחקים שפיתחתי במסגרת האוסף הוא שפן סלע מסדר מספרים, שמתרכז בהבנה של סדר מספרים בטווח שבין 20 ל־100.
 </p>
 
 <p class="leading-relaxed text-slate-100">
@@ -519,7 +508,7 @@ The main challenge in development was turning a very simple game idea into an en
 
 <div class="mt-6 rounded-2xl border border-slate-800 bg-slate-900/60 p-4 sm:p-5">
   <figure class="space-y-3">
-    <img src="/assets/projects/Wizdi/gif1.gif" alt="משחק לימודי לילדים" class="w-full rounded-xl object-cover max-w-[500px] m-auto">
+    <img src="/assets/projects/Wizdi/Gif1.gif" alt="משחק לימודי לילדים" class="w-full rounded-xl object-cover max-w-[500px] m-auto">
     <figcaption class="text-sm text-slate-300">
      משוב חיובי במשחק
     </figcaption>
@@ -531,7 +520,7 @@ The main challenge in development was turning a very simple game idea into an en
 </p>
 
 <p class="leading-relaxed text-slate-100">
-האתגר המרכזי בפיתוח היה להפוך רעיון משחקי מאוד פשוט לחוויה מהנה ומתגמלת. לשם כך יצרתי אנימציות קצרות של הצלחה וטעות, ושילבתי אותם עם אפקטים ומעברים שונים כדי לייצר משובים משמעותיים וכיפיים. המשחק משקף את הגישה שלי לפיתוח משחקים, שבה שילוב בין לוגיקה, עיצוב ואנימציה מינימליסטיים משמש ככלי מרכזי ליצירת חוויית משתמש ברורה ומשמעותית.
+האתגר המרכזי בפיתוח היה להפוך רעיון משחקי מאוד פשוט לחוויה מהנה ומתגמלת. לשם כך יצרתי אנימציות קצרות של הצלחה וטעות, ושילבתי אותם עם אפקטים ומעברים שונים כדי לייצר משובים משמעותיים וכיפיים. המשחק משקף את הגישה שלי לפיתוח משחקים, שבה שילוב בין לוגיקה, עיצוב ואנימציה מינימליסטית משמש ככלי מרכזי ליצירת חוויית משתמש ברורה ומשמעותית.
 </p>
 `
     }

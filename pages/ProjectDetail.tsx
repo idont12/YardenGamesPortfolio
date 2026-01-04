@@ -5,6 +5,7 @@ import { PROJECTS, ICONS,STICKERS } from '../constants';
 import Sticker from '../components/Sticker'; 
 import NotFound from './NotFound';
 
+
 const ProjectDetail: React.FC = () => {
     const { slug } = useParams<{ slug: string }>();
     const { t, getLocalized } = useLanguage();
@@ -106,7 +107,7 @@ const htmlContent = getLocalized(project.contentHtml) as string;
             
             {/* --- HERO HEADER --- */}
             <div className="px-6 md:px-12 max-w-7xl mx-auto mb-16">
-                <Link to="/" className="inline-flex items-center text-sm font-bold font-mono text-pop-blue hover:underline mb-8 uppercase tracking-widest">
+                <Link to="/" className="inline-flex items-center text-sm font-bold font-mono text-pop-blue hover:underline focus:underline mb-8 uppercase tracking-widest">
                     <span className="text-lg mr-2 rtl:mr-0 rtl:ml-2">{t('general.arrow')}</span> {t('detail.back')}
                 </Link>
 
@@ -131,22 +132,22 @@ const htmlContent = getLocalized(project.contentHtml) as string;
                         {/* Comic Style Ability Cards (Stats) */}
                         <div className="grid grid-cols-2 gap-4">
                             {/* Card 1: Role */}
-                            <div className="bg-white p-3 border-4 border-slate-900 shadow-comic transform hover:-rotate-1 transition-transform">
+                            <div className="bg-white p-3 border-4 border-slate-900 shadow-comic transform">
                                 <div className="text-[10px] font-black uppercase text-slate-500 mb-1 tracking-widest">{t('detail.role')}</div>
                                 <div className="font-marker text-slate-900 leading-tight text-lg">{getLocalized(project.role)}</div>
                             </div>
                             {/* Card 2: Time */}
-                            <div className="bg-pop-yellow p-3 border-4 border-slate-900 shadow-comic transform hover:rotate-1 transition-transform">
+                            <div className="bg-pop-yellow p-3 border-4 border-slate-900 shadow-comic transform">
                                 <div className="text-[10px] font-black uppercase text-slate-900/60 mb-1 tracking-widest">{t('detail.time')}</div>
                                 <div className="font-marker text-slate-900 leading-tight text-lg">{getLocalized(project.timeSpent)}</div>
                             </div>
                             {/* Card 3: Purpose */}
-                            <div className="bg-pop-pink p-3 border-4 border-slate-900 shadow-comic transform hover:rotate-1 transition-transform text-white">
+                            <div className="bg-pop-pink p-3 border-4 border-slate-900 shadow-comic transform text-white">
                                 <div className="text-[10px] font-black uppercase text-white/80 mb-1 tracking-widest">{t('detail.purpose')}</div>
                                 <div className="font-marker leading-tight text-lg">{getLocalized(project.purpose)}</div>
                             </div>
                             {/* Card 4: Difficulty */}
-                            <div className="bg-slate-800 p-3 border-4 border-slate-900 shadow-comic transform hover:-rotate-1 transition-transform">
+                            <div className="bg-slate-800 p-3 border-4 border-slate-900 shadow-comic transform">
                                 <div className="text-[10px] font-black uppercase text-slate-400 mb-1 tracking-widest">{t('detail.difficulty')}</div>
                                 <div className="mt-1">{renderStars(project.difficulty)}</div>
                             </div>
@@ -169,7 +170,7 @@ const htmlContent = getLocalized(project.contentHtml) as string;
                                 href={project.projectLink.url}
                                 target="_blank"
                                 rel="noreferrer"
-                                className="inline-flex items-center gap-3 bg-pop-yellow text-slate-900 px-6 py-3 border-4 border-slate-900 shadow-[6px_6px_0px_#000] font-black font-marker uppercase tracking-wider hover:bg-white transition-colors"
+                                className="inline-flex items-center gap-3 bg-pop-yellow text-slate-900 px-6 py-3 border-4 border-slate-900 shadow-[6px_6px_0px_#000] font-black font-marker uppercase tracking-wider hover:bg-white focus:bg-white transition-colors"
                             >
                                 {getLocalized(project.projectLink.label)}
                                 <span className="w-5 h-5 rtl:scale-x-[-1]">{ICONS.NEXT_ARROW}</span>
@@ -251,7 +252,7 @@ const htmlContent = getLocalized(project.contentHtml) as string;
                     </h2>
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
                         {project.gallery.map((item, idx) => (
-                            <div key={idx} className="border-4 border-slate-900 bg-slate-900 shadow-comic hover:scale-[1.02] transition-transform duration-300 flex">
+                            <div key={idx} className="border-4 border-slate-900 bg-slate-900 shadow-comic hover:scale-[1.02] focus:scale-[1.02] transition-transform duration-300 flex">
                                 {item.type === 'image' && item.src && (
                                     <button
                                         type="button"
@@ -285,9 +286,9 @@ const htmlContent = getLocalized(project.contentHtml) as string;
                         {/* Prev */}
                         <button
                             onClick={() => navigate(`/project/${prevProject.slug}`)}
-                            className="flex items-center space-x-4 group rtl:space-x-reverse text-slate-500 hover:text-white transition-colors "
+                            className="flex items-center space-x-4 group rtl:space-x-reverse text-slate-500 hover:text-white focus:text-white transition-colors "
                         >
-                            <div className="w-10 h-10 border-2 border-current rounded-full flex items-center justify-center transform group-hover:-translate-x-2 rtl:group-hover:translate-x-2 transition-transform">
+                            <div className="w-10 h-10 border-2 border-current rounded-full flex items-center justify-center transform group-hover:-translate-x-2 group-focus:-translate-x-2 rtl:group-hover:translate-x-2 rtl:group-focus:translate-x-2 transition-transform">
                                 <div className="w-5 h-5 rtl:scale-x-[-1]">{ICONS.PREV_ARROW}</div>
                             </div>
                             <div className="ltr:text-left rtl:text-right hidden md:block">
@@ -299,7 +300,7 @@ const htmlContent = getLocalized(project.contentHtml) as string;
                         {/* Next Button (Main Call to Action) */}
                         <button
                             onClick={() => navigate(`/project/${nextProject.slug}`)}
-                            className="relative bg-pop-yellow text-slate-900 px-8 py-4 text-xl font-black font-marker uppercase tracking-wider hover:bg-white transition-all border-4 border-slate-900 shadow-[6px_6px_0px_#000] hover:shadow-[8px_8px_0px_#000] hover:-translate-y-1 flex items-center gap-4 group rtl:right-auto rtl:left-2"
+                            className="relative bg-pop-yellow text-slate-900 px-8 py-4 text-xl font-black font-marker uppercase tracking-wider hover:bg-white focus:bg-white transition-all border-4 border-slate-900 shadow-[6px_6px_0px_#000] hover:shadow-[8px_8px_0px_#000] focus:shadow-[8px_8px_0px_#000] hover:-translate-y-1 focus:-translate-y-1 flex items-center gap-4 group rtl:right-auto rtl:left-2"
                         >
                             <span>{t('detail.next')}</span>
                             <div className="w-6 h-6 rtl:scale-x-[-1] transition-transform">{ICONS.NEXT_ARROW}</div>

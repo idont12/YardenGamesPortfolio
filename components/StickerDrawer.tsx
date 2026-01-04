@@ -34,7 +34,7 @@ const StickerDrawer: React.FC = () => {
         </button>
 
         <div className="relative z-10">
-          <h2 className="text-4xl font-marker text-center mb-1 text-slate-900 transform -rotate-2 drop-shadow-sm">
+          <h2 className="text-4xl font-marker text-center mb-1 text-slate-900 transform -rotate-2 drop-shadow-sm py-0 px-8">
             {t('stickers.title')}
           </h2>
 

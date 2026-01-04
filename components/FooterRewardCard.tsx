@@ -46,12 +46,12 @@ const FooterRewardCard: React.FC = () => {
               href={link.url}
               target="_blank"
               rel="noreferrer"
-              className="relative flex flex-col items-center justify-center p-6 bg-white border-4 border-slate-900 hover:bg-pop-yellow hover:-translate-y-2 hover:shadow-[8px_8px_0px_#000] transition-all duration-200 group/chip text-slate-900"
+              className="relative flex flex-col items-center justify-center p-6 bg-white border-4 border-slate-900 hover:bg-pop-yellow hover:-translate-y-2 hover:shadow-[8px_8px_0px_#000] focus:bg-pop-yellow focus:-translate-y-2 focus:shadow-[8px_8px_0px_#000] transition-all duration-200 group/chip text-slate-900"
               onClick={() =>
                 trackEvent(
                   'click',
                   'footer_link',
-                  link.id || link.url
+                  link.id
                 )}
             >
               {/* Icon */}

@@ -93,7 +93,7 @@ const AlchemistLoader: React.FC<IntroLoaderProps> = ({ onFinished }) => {
         {/* TECH TEXT OVERLAY */}
         <div className="absolute bottom-4 flex flex-col items-center">
             <div className="text-[10px] font-mono tracking-[0.4em] text-cyan-500/50 uppercase mb-2 animate-pulse">
-                Neural_Link // Established
+              Loading Site // Cool Intro
             </div>
             <div className="flex items-baseline gap-1">
                 <span className="text-5xl font-black italic text-white tracking-tighter">
