@@ -71,7 +71,7 @@ export const STICKERS: Sticker[] = [
     src: '/assets/projects/Stickers/Lumos.webp',
     label: { en: 'Lumos', he: 'לומוס' },
     description: { en: 'Arrives early and turns on the light in the office.', he: 'מגיע מוקדם ומדליק את האור במשרד.' },
-    x: '85%',
+    x: '75%',
     y: '25%',
     page: 'hex-shade',
     rotation: 15
