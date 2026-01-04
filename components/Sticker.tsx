@@ -55,7 +55,7 @@ const Sticker: React.FC<StickerProps> = ({ data }) => {
         ref={stickerRef}
         onClick={handleClick}
         className={`
-            absolute z-[100] cursor-pointer select-none
+            absolute z-[20] cursor-pointer select-none
             ${isFlying ? 'pointer-events-none' : 'animate-float hover:scale-110'}
         `}
         style={{ 

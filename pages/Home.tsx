@@ -38,7 +38,7 @@ const Home: React.FC = () => {
 
                 {/* Left: Text Content */}
                 <div class="flex-1 z-10 text-center md:text-start md:rtl:text-right relative">
-                    <span class="font-marker text-white text-[1.5em] relative ltr:right-5 rtl:left-5">
+                    <span class="font-marker text-start text-white text-[1.5em] block relative ltr:right-5 rtl:left-5 [@media(max-width:750px)]:right-0 [@media(max-width:750px)]:left-0">
                         {t('hero.intro')}
                     </span>
 
@@ -46,7 +46,7 @@ const Home: React.FC = () => {
                         {t('hero.name')}
                     </h1>
 
-                    <span class="font-marker m-0 text-white  block text-[1.5em] relative ltr:text-right rtl:text-left rtl:max-w-[16em]">
+                    <span class="font-marker m-0 text-white  block text-[1.5em] relative ltr:text-right rtl:text-left rtl:max-w-[16em]  [@media(max-width:750px)]:text-center">
                         {t('hero.end')}
                     </span>
 
