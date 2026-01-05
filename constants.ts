@@ -17,7 +17,7 @@ export const ICONS = {
   STAR_FULL: React.createElement("svg", { viewBox: "0 0 24 24", fill: "currentColor", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" },
     React.createElement("polygon", { points: "12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" })
   ),
-  STAR_EMPTY: React.createElement("svg", { viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" },
+  STAR_EMPTY: React.createElement("svg", { viewBox: "0 0 24 24", fill: "none", stroke: "rgb(148 163 184)", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" },
     React.createElement("polygon", { points: "12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" })
   ),
   NEXT_ARROW: React.createElement("svg", { viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "3", strokeLinecap: "round", strokeLinejoin: "round" },
@@ -152,8 +152,8 @@ export const TRANSLATIONS: TranslationMap = {
   // About
   'about.title': { en: 'About Me', he: 'קצת עליי' },
   'about.p1': {
-    en: "Game developer and designer with experience in mobile and web games.<br> I focus on creating clear and enjoyable gameplay experiences by integrating onboarding into level design, using meaningful feedback, and supporting player understanding through purposeful animations and accessible systems. <br> I value efficiency and aim to develop engaging, accessible games for diverse players and play styles.",
-    he: "אני מפתח ומעצב משחקים, עם ניסיון ביצירת משחקים ל-mobile ול-web.<br> אני מאמין שמשחק טוב מלמד את השחקן איך לשחק בו, ולכן אני שם דגש על יצירת חווית משחק מהנה וברורה מהרגע הראשון. הגישה שלי מתבטאת בשילוב האונבורדינג לתוך תכנון השלבים, שימוש בפידבקים משמעותיים, אנימציות התומכות במשחק והנגשה של מערכות מורכבות לשחקנים.<br>לצד זאת, חשוב לי לעבוד ביעילות ולייצר משחקים מהנים ונגישים למגוון משתמשים וסגנונות משחק."
+    en: "I'm a game developer and designer with experience in mobile and web games.<br> I focus on creating clear and enjoyable gameplay experiences by integrating the tutorial into level design, using meaningful feedback, and supporting player understanding through purposeful animations and accessible systems. <br> I value efficiency and aim to develop engaging, accessible games for diverse players and play styles.",
+    he: "אני מפתח ומעצב משחקים, עם ניסיון ביצירת משחקים לטלפון ולדפדפן.<br> אני מאמין שמשחק טוב מלמד את השחקן איך לשחק בו, ולכן אני שם דגש על יצירת חווית משחק מהנה וברורה מהרגע הראשון. הגישה שלי מתבטאת בשילוב ההדרכה (של איך משחקים) לתוך תכנון השלבים, שימוש בפידבקים משמעותיים, אנימציות התומכות במשחק והנגשה של מערכות מורכבות לשחקנים.<br>לצד זאת, חשוב לי לעבוד ביעילות ולייצר משחקים מהנים ונגישים למגוון משתמשים וסגנונות משחק."
   },
 
   // Project Detail
@@ -179,7 +179,7 @@ export const TRANSLATIONS: TranslationMap = {
   'reward.linkedin.label': { en: 'LinkedIn', he: 'לינקדאין' },
   'reward.linkedin.desc': { en: 'Professional lobby', he: 'לובי מקצועי' },
   'reward.instagram.label': { en: 'Instagram', he: 'אינסטגרם' },
-  'reward.instagram.desc': { en: 'Behind-the-scenes visuals', he: 'מאחורי הקלעים' },
+  'reward.instagram.desc': { en: 'Behind the scenes visuals', he: 'מאחורי הקלעים' },
 
   // Stickers
   'stickers.title': { en: 'Sticker Collection', he: 'אוסף המדבקות' },
@@ -332,8 +332,8 @@ export const PROJECTS: Project[] = [
     accentColor: '#d946ef', // Fuchsia
     coverImage: '/assets/projects/screenBreakerXp/Cover.jpg',
     workSummary: {
-      en: ['Building a dynamic ‘Paint’ mechanic.', 'Creating fun tools.'],
-      he: ['בניית מערכת "צייר" דינמית', 'יצירת כלים מגניבים וכיפים ']
+      en: ['Defining the game experience', 'Building a dynamic "Draw" system', 'Creating cool and fun tools'],
+      he: ['איפיון משחק','בניית מערכת "צייר" דינמית', 'יצירת כלים מגניבים וכיפים']
     },
     whatIDid: {
       en: ['Art', 'Programming'],

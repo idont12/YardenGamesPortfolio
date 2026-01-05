@@ -21,7 +21,7 @@ const FooterRewardCard: React.FC = () => {
 
   return (
     <footer className="relative py-24 px-6 overflow-hidden bg-halftone">
-      <div className="relative max-w-4xl mx-auto bg-slate-900 border-4 border-slate-900 rounded-none p-8 md:p-12 shadow-comic-lg transform rotate-1">
+      <div className="relative max-w-4xl mx-auto bg-slate-900 border-4 border-slate-900 rounded-none p-8 max-sm:py-8 max-sm:px-[0.8rem] md:p-12 shadow-comic-lg transform rotate-1">
 
         {/* Comic Background accent */}
         <div className="absolute inset-0 bg-pop-purple mix-blend-overlay opacity-20 pointer-events-none" />

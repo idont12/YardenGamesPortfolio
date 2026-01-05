@@ -130,7 +130,7 @@ const htmlContent = getLocalized(project.contentHtml) as string;
                         </p>
 
                         {/* Comic Style Ability Cards (Stats) */}
-                        <div className="grid grid-cols-2 gap-4">
+                        <div className="grid grid-cols-2 max-sm:grid-cols-1 gap-4">
                             {/* Card 1: Role */}
                             <div className="bg-white p-3 border-4 border-slate-900 shadow-comic transform">
                                 <div className="text-[10px] font-black uppercase text-slate-500 mb-1 tracking-widest">{t('detail.role')}</div>

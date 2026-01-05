@@ -34,7 +34,7 @@ const Home: React.FC = () => {
             ))}
 
             {/* --- HERO SECTION --- */}
-            <section className="relative px-6 md:px-12 mb-20 md:mb-28 max-w-7xl mx-auto flex flex-col md:flex-row gap-12 items-center">
+            <section className="relative px-6 md:px-12 mb-20 max-w-7xl mx-auto flex flex-col md:flex-row gap-12 items-center min-h-[83dvh]">
 
                 {/* Left: Text Content */}
                 <div class="flex-1 z-10 text-center md:text-start md:rtl:text-right relative">
