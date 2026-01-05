@@ -152,8 +152,8 @@ export const TRANSLATIONS: TranslationMap = {
   // About
   'about.title': { en: 'About Me', he: 'קצת עליי' },
   'about.p1': {
-    en: "Hi, I’m Yarden, a game developer and designer.<br>I believe a good game teaches the player how to play, so I focus on creating a clear experience from the very first moment. I do this through thoughtful level design, clear feedback, animations, and making complex systems easy to understand.<br>Alongside that, I care about working efficiently and building polished, accessible games for different players and play styles.",
-    he: 'שמי ירדן, אני מפתח ומעצב משחקים.<br>אני מאמין שמשחק טוב מלמד את השחקן איך לשחק בו, ושם דגש על יצירת חווית משחק מהנה וברורה מהרגע הראשון. הגישה שלי מתבטאת בתכנון שלבים, פידבקים, אנימציות והנגשה של מערכות מורכבות.<br>לצד זאת, חשוב לי לעבוד ביעילות ולייצר משחקים מהנים ונגישים למגוון משתמשים וצורות משחק.'
+    en: "Game developer and designer with experience in mobile and web games.<br> I focus on creating clear and enjoyable gameplay experiences by integrating onboarding into level design, using meaningful feedback, and supporting player understanding through purposeful animations and accessible systems. <br> I value efficiency and aim to develop engaging, accessible games for diverse players and play styles.",
+    he: "אני מפתח ומעצב משחקים, עם ניסיון ביצירת משחקים ל-mobile ול-web.<br> אני מאמין שמשחק טוב מלמד את השחקן איך לשחק בו, ולכן אני שם דגש על יצירת חווית משחק מהנה וברורה מהרגע הראשון. הגישה שלי מתבטאת בשילוב האונבורדינג לתוך תכנון השלבים, שימוש בפידבקים משמעותיים, אנימציות התומכות במשחק והנגשה של מערכות מורכבות לשחקנים.<br>לצד זאת, חשוב לי לעבוד ביעילות ולייצר משחקים מהנים ונגישים למגוון משתמשים וסגנונות משחק."
   },
 
   // Project Detail
