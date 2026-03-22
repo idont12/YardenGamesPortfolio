@@ -1,87 +1,79 @@
-<<<<<<< HEAD
-# YZ Game UI Portfolio
+<h1>My Portfolio: Interactive Projects Showcase</h1>
 
-A gamified, tech-inspired portfolio website built with React, Vite, and Tailwind CSS. Features "Into the Spider-Verse" comic aesthetics, bilingual support (EN/HE), a sticker collection system, and game-HUD mechanics.
+<p>
+  <img src="https://img.shields.io/badge/React-App-61dafb?logo=react&logoColor=black" alt="React Badge"> 
+  <img src="https://img.shields.io/badge/JavaScript-ES6+-orange?logo=javascript&logoColor=white" alt="JS Badge">
+  <img src="https://img.shields.io/badge/CSS-Animations-264de4?logo=css3&logoColor=white" alt="CSS Badge">
+  <img src="https://img.shields.io/badge/GSAP-Animations-88ce02" alt="GSAP Badge">
+</p>
 
-## 🚀 Getting Started
+<p>
+  Welcome to my interactive portfolio 🚀  
+  <br>
+  A modern web experience showcasing my projects, skills, and creativity through smooth animations and clean design.
+</p>
 
-1.  **Install dependencies:**
-    ```bash
-    npm install
-    ```
-2.  **Run development server:**
-    ```bash
-    npm run dev
-    ```
-3.  **Build for production:**
-    ```bash
-    npm run build
-    ```
+<p>
+  👉 <a href="YOUR_LIVE_LINK_HERE" target="_blank">View Portfolio</a>
+</p>
 
-## 🎨 Visual Style & Customization
+<hr>
 
-The site uses a mix of Cyberpunk HUD and Comic Book aesthetics.
+<h2>About the Project</h2>
+<p>
+  This portfolio is a personal project built with <strong>React</strong>, designed to present my work in an engaging and interactive way.  
+  It focuses on combining performance with modern UI/UX principles.
+</p>
 
-### CSS & Styling Architecture
+<h2>Concept and Inspiration</h2>
+<p>
+  The goal was to move beyond a static portfolio and create a dynamic experience.  
+  By integrating <strong>GSAP animations</strong> and SVG-based transitions, the site delivers smooth, visually appealing interactions that guide the user through my work.
+</p>
 
-The project uses a mix of **Tailwind CSS** and **Global CSS Classes**.
+<hr>
 
-1.  **Tailwind Configuration (`index.html`)**:
-    *   Since this is a standalone project structure, the Tailwind configuration is currently located inside the `<script>` tag in `index.html`.
-    *   You can edit the `colors` theme (e.g., `pop-yellow`, `pop-pink`) or `fontFamily` there.
+<h2>Features</h2>
+<ul>
+  <li>⚡ Built with React for a fast and scalable structure.</li>
+  <li>🎬 Smooth animations powered by GSAP.</li>
+  <li>🧩 Modular components for easy maintenance and expansion.</li>
+  <li>📱 Responsive design for all screen sizes.</li>
+  <li>🎨 Clean and modern UI/UX.</li>
+</ul>
 
-2.  **Global CSS Classes (`index.html`)**:
-    *   Look for the `<style>` tag in `index.html`.
-    *   This is where custom utility classes like `.bg-halftone`, `.shadow-comic`, and scrollbar styles are defined.
-    *   If you want to change the shadow direction or dot pattern size, edit it here.
+<hr>
 
-3.  **Fonts**:
-    *   **Space Grotesk:** Main body text.
-    *   **JetBrains Mono:** Code and technical labels.
-    *   **Permanent Marker:** Handwritten / Graffiti accents (Comic vibe).
-    *   To change fonts, update the Google Fonts link in `index.html` and the `fontFamily` config in the script tag.
+<h2>How to Run Locally</h2>
+<pre>
+git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
+cd YOUR_REPO
+npm install
+npm start
+</pre>
 
-## 🖼️ How to Change Icons (SVGs)
+<hr>
 
-All icons (backpack, social links, stars, arrows) are centrally located in `constants.ts`.
+<h2>Technologies Used</h2>
+<ul>
+  <li><strong>React</strong>: Component-based UI development.</li>
+  <li><strong>JavaScript (ES6+)</strong>: Application logic.</li>
+  <li><strong>CSS / SCSS</strong>: Styling and layout.</li>
+  <li><strong>GSAP</strong>: Advanced animations and transitions.</li>
+  <li><strong>SVG</strong>: Custom animated graphics.</li>
+</ul>
 
-1.  Open `constants.ts`.
-2.  Locate the `ICONS` object at the top.
-3.  Replace the SVG JSX with your own.
-    *   *Tip: Use `currentColor` for stroke/fill to let Tailwind classes control the color.*
+<hr>
 
-Example:
-```typescript
-export const ICONS = {
-  BACKPACK: (
-    <svg ...> ... </svg> // Paste your new SVG here
-  ),
-  // ...
-};
-```
+<h2>Future Improvements</h2>
+<ul>
+  <li>Add dark/light theme toggle 🌙☀️</li>
+  <li>Integrate CMS for dynamic project updates</li>
+  <li>Improve accessibility (ARIA, keyboard navigation)</li>
+</ul>
 
-## 📝 How to Edit Text & Projects
+<hr>
 
-All text content is in `constants.ts`.
-
-1.  **Translations:** Edit `TRANSLATIONS` object for UI labels (EN/HE).
-2.  **Projects:** Edit `PROJECTS` array.
-    *   `rarity`: Determines the border color of the project card.
-    *   `gallery`: Add image URLs or Video embed HTML.
-
-## 👾 How to Add Stickers
-
-1.  Add sticker images to `public/assets/stickers/`.
-2.  In `constants.ts`, add to the `STICKERS` array.
-3.  Set `x` and `y` for their position on the Home page.
-
-## 🎥 Rive Intro Integration
-
-To replace the HTML/CSS loader with a real Rive animation:
-
-1.  Install the library: `npm install @rive-app/react-canvas`
-2.  Open `components/IntroLoader.tsx`.
-3.  Follow the comments inside the file to implement the `useRive` hook.
-=======
-# YardenGamesPortfolio
->>>>>>> a02524334a7ec2424482160cbf4c26aabe4d9ab9
+<p>
+  Feel free to explore, fork, and share feedback 🙌  
+</p>
