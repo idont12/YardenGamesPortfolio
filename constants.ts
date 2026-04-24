@@ -106,16 +106,16 @@ export const STICKERS: Sticker[] = [
     page: 'number-club',
     rotation: 45
   },
-  // {
-  //   id: 'Duck',
-  //   src: '/assets/projects/Stickers/Duck.webp',
-  //   label: { en: 'Co-Pilot', he: 'המשחקים אהובים עלי' },
-  //   description: { en: "Portal 2 & Evan's Remains", he: "פורטל 2 + Evan's Remains" },
-  //   x: '5%',
-  //   y: '150%',
-  //   page: 'other',
-  //   rotation: -5
-  // }
+  {
+    id: 'Duck',
+    src: '/assets/projects/Stickers/Duck.webp',
+    label: { en: 'Co-Pilot', he: 'המשחקים אהובים עלי' },
+    description: { en: "Portal 2 & Evan's Remains", he: "פורטל 2 + Evan's Remains" },
+    x: '5%',
+    y: '150%',
+    page: 'rockys-cookies',
+    rotation: -5
+  }
 ];
 
 export const TRANSLATIONS: TranslationMap = {
