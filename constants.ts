@@ -645,46 +645,123 @@ The main challenge in development was turning a very simple game idea into an en
 `
     }
   },
-  // {
-  //   id: '5',
-  //   slug: 'other',
-  //   name: { en: 'Team Zenith Branding', he: 'מיתוג Team Zenith' },
-  //   shortTagline: { en: 'Stream package and jersey design.', he: 'חבילת סטרימינג ועיצוב חולצות.' },
-  //   shortDescription: {
-  //     en: 'Complete visual identity for an up-and-coming Valorant esports team.',
-  //     he: 'זהות ויזואלית מלאה לקבוצת Valorant עולה בספורט האלקטרוני.'
-  //   },
-  //   tag: { en: 'Branding', he: 'מיתוג' },
-  //   purpose: { en: 'Freelance', he: 'פרילאנס' },
-  //   timeSpent: { en: '1 month', he: 'חודש' },
-  //   role: { en: 'Graphic Designer', he: 'מעצב גרפי' },
-  //   difficulty: 2,
-  //   xpGain: 450,
-  //   rarity: 'Common',
-  //   accentColor: '#f43f5e', // Rose
-  //   coverImage: 'https://picsum.photos/id/70/600/800',
-  //   workSummary: {
-  //     en: ['Designed logo and jerseys.', 'Created animated stream overlays.'],
-  //     he: ['עיצוב לוגו וחולצות.', 'יצירת שכבות סטרימינג מונפשות.']
-  //   },
-  //   whatIDid: {
-  //     en: ['Logo Design', 'Merch Design', 'OBS Setup'],
-  //     he: ['עיצוב לוגו', 'עיצוב מרצ\'נדייז', 'הגדרות OBS']
-  //   },
-  //   projectLink: {
-  //     url: '',
-  //     label: {
-  //       en: '',
-  //       he: ''
-  //     }
-  //   },
-  //   technologies: ['Photoshop', 'Illustrator', 'OBS'],
-  //   gallery: [
-  //     { type: 'image', src: 'https://picsum.photos/id/76/1200/600', alt: 'Stream Overlay' }
-  //   ],
-  //   contentHtml: {
-  //     en: `<p>Bold, aggressive, and memorable. The logo uses sharp angles to convey speed and precision.</p>`,
-  //     he: `<p>נועז, אגרסיבי וזכיר. הלוגו משתמש זוויות חדות כדי להעביר תחושת מהירות ודיוק.</p>`
-  //   }
-  // }
+  {
+  id: '5',
+  slug: 'rockys-cookies',
+  name: { en: "Rocky's Cookies", he: "Rocky's Cookies" },
+  shortTagline: {
+    en: 'First-person rope-based 3D platformer prototype',
+    he: 'אב טיפוס של משחק פלטפורמה תלת מימדי בגוף ראשון עם מכניקת חבלים'
+  },
+  shortDescription: {
+    en: 'A 3D platformer where players use rope mechanics to explore and move through a closed world.',
+    he: 'משחק פלטפורמה תלת מימדי בו השחקן משתמש בחבלים כדי לחקור ולהתקדם בעולם סגור.'
+  },
+  tag: { en: '3D Game', he: 'משחק תלת מימד' },
+  purpose: { en: 'Prototype', he: 'אב טיפוס' },
+  timeSpent: { en: '2 Months', he: 'חודשיים' },
+  role: { en: 'Everything', he: 'הכל' },
+  difficulty: 4,
+  xpGain: 1800,
+  rarity: 'Rare',
+  accentColor: '#f59e0b', // Amber
+  coverImage: '/assets/projects/Rockys-Cookies/main.webp',
+  workSummary: {
+    en: [
+      'Developed a first-person rope-based traversal system for 3D movement.',
+      'Designed and built a complete 3D prototype including level, UI, and visual setup.'
+    ],
+    he: [
+      'פיתוח מערכת תנועה מבוססת חבלים בגוף ראשון.',
+      'תכנון ובנייה של אב טיפוס תלת מימדי כולל שלבים, ממשק משתמש והגדרות ויזואליות.'
+    ]
+  },
+  whatIDid: {
+    en: ['Game Design', 'Programming', '3D Modeling', 'UI Design'],
+    he: ['עיצוב משחק', 'תכנות', 'מידול תלת מימדי', 'עיצוב ממשק']
+  },
+  projectLink: {
+    url: 'https://yardenz.itch.io/rockyscookies',
+    label: {
+      en: 'Game link',
+      he: 'קישור למשחק'
+    }
+  },
+  technologies: ['Unity', 'Blender', 'Affinity Designer'],
+  gallery: [
+    { type: 'image', src: '/assets/projects/Rockys-Cookies/Gif3.gif', alt: 'Platforming' },
+    { type: 'image', src: '/assets/projects/Rockys-Cookies/Gif2.gif', alt: 'Mini Game' },
+    { type: 'image', src: '/assets/projects/Rockys-Cookies/image1.webp', alt: 'Game UI' },
+  ],
+  contentHtml: {
+    en: `<div class="space-y-4">
+  <p class="leading-relaxed text-slate-100">
+    <strong>Rocky’s Cookies</strong> is a first-person 3D platformer prototype set within a surreal world inside a cereal box. The project was born from a desire to deeply understand the fundamental differences between 2D and 3D level design and to explore the unique challenges inherent in developing within a three-dimensional space.
+  </p>
+
+  <div class="mt-6 rounded-2xl border border-slate-800 bg-slate-900/60 p-4 sm:p-5">
+    <iframe class="w-full rounded-xl m-auto" width="560" height="315" src="https://www.youtube.com/embed/phLDz2ysWKI?si=jSibn5jAs7VQBVZT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+
+  <p class="leading-relaxed text-slate-100">
+    The game features a linear level designed to provide a clear and intuitive player experience. To add depth to the gameplay, I implemented an objective system that encourages players to explore alternative paths and utilize movement mechanics creatively. A core challenge was creating a "readable" level without relying on text-based tutorials; to achieve this, I focused on guiding the player through environmental storytelling—using visual cues, lighting, and composition to naturally lead the eye toward the next goal.
+  </p>
+
+    <div class="mt-6 rounded-2xl border border-slate-800 bg-slate-900/60 p-4 sm:p-5">
+  <figure class="space-y-3">
+    <img src="/assets/projects/Rockys-Cookies/Gif1.gif" alt="Shooting rope in the game" class="w-full rounded-xl object-cover max-w-[500px] m-auto">
+    <figcaption class="text-sm text-slate-300">
+    Shooting rope in the game
+    </figcaption>
+  </figure>
+</div>
+
+  <p class="leading-relaxed text-slate-100">
+    A significant emphasis was placed on total immersion from the very first moment. I wanted to ensure the start screen didn't feel like a generic, detached menu, but rather an integral part of the world. By integrating UI elements directly into the environment (Diegetic UI), I created a seamless transition that pulls the player into the game's atmosphere immediately upon launching.
+  </p>
+
+
+</div>`,
+    he: `<div class="space-y-4">
+
+  <p class="leading-relaxed text-slate-100">
+Rocky’s Cookies הוא פרוטוטייפ למשחק פלטפורמה תלת-ממדי בגוף ראשון, המתרחש בתוך עולם סוריאליסטי בתוך קופסת דגני בוקר. הפרויקט נולד מתוך מטרה להבין לעומק את ההבדלים השונים בין תכנון משחק דו ממדי לתלת ממד ומה האתגרים הנסתרים שעומדים בפני פיתוח בתלת ממד.
+  </p>
+
+<div class="mt-6 rounded-2xl border border-slate-800 bg-slate-900/60 p-4 sm:p-5">
+
+  <iframe  class="w-full rounded-xl m-auto"
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/phLDz2ysWKI?si=jSibn5jAs7VQBVZT"
+  title="YouTube playlist player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowfullscreen>
+</iframe>
+
+   
+</div>
+
+  <p class="leading-relaxed text-slate-100">
+המשחק כולל שלב אחד ליניארי שמטרתו לייצר חוויית משחק ברורה ואינטואיטיבית למשתמש. על מנת להעמיק את המשחקיות הוספתי מערכת משימות המעודדת חקירה של נתיבים אלטרנטיביים ושימוש יצירתי במכניקות המשחק. אתגר מרכזי בתהליך היה יצירת שלב אינטואיטיבי ככל הניתן ללא שימוש בהסברים טקסטואליים. לצורך כך, התמקדתי בהכוונת השחקן באמצעות רמזים ויזואליים, תאורה וקומפוזיציה סביבתית המובילים את העין לעבר היעד הבא בצורה טבעית.
+  </p>
+
+      <div class="mt-6 rounded-2xl border border-slate-800 bg-slate-900/60 p-4 sm:p-5">
+  <figure class="space-y-3">
+    <img src="/assets/projects/Rockys-Cookies/Gif1.gif" alt=" יצירת חבלים במשחק" class="w-full rounded-xl object-cover max-w-[500px] m-auto">
+    <figcaption class="text-sm text-slate-300">
+    יצירת חבלים במשחק
+    </figcaption>
+  </figure>
+</div>
+
+  <p class="leading-relaxed text-slate-100">
+אחד הדברים שהיו לי מאוד חשובים זה לייצר משחק שיראה טוב מהרגע הראשון. לוודא שמסך הפתיחה לא יראה כמשהו גנרי שלא קשור למשחק ולהצליח להכניס את השחקן אל העולם של המשחק מהרגע הראשון. כדי לעשות את זה חיברתי את אלמנטי ה-UI לרקע ולעולם של מסך הפתיחה כך שהוא מרגיש כחלק מהעולם ולא מנותק ממנו.
+  </p>
+
+</div>
+`
+  }
+}
 ];
