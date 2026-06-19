@@ -16,8 +16,7 @@ const AppContent: React.FC = () => {
 
 useEffect(() => {
     try {
-      // eslint-disable-next-line @typescript-eslint/no-var-requires
-      if (initGA) initGA();
+      initGA();
     } catch (e) {
       console.error("GA Initialization Error:", e); // This will tell you exactly what's wrong
     }
